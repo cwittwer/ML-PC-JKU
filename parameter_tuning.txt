@@ -1,0 +1,91 @@
+Full feature size: (2282, 169)
+...KNeighborsClassifier evaluation starting...
+> Model: KNeighborsClassifier:
+>
+{'leaf_size': 1, 'metric': 'minkowski', 'n_neighbors': 5, 'p': 1, 'weights': 'uniform'}
+Best Score - KNN: 0.4701387348999315
+
+              precision    recall  f1-score   support
+
+           0       0.36      0.36      0.36    189696
+           1       0.45      0.43      0.44    162816
+           2       0.39      0.39      0.39    243840
+           3       0.49      0.50      0.50    279936
+
+    accuracy                           0.42    876288
+   macro avg       0.42      0.42      0.42    876288
+weighted avg       0.42      0.42      0.42    876288
+
+[[ 67952  31776  36400  53568]
+ [ 37456  69232  38928  17200]
+ [ 34424  39008  94392  76016]
+ [ 51216  15160  72896 140664]]
+--------------------------------------------------------
+
+ ...SVC evaluation starting...
+> Model: SVC:
+>
+{'C': 1, 'gamma': 0.001, 'kernel': 'rbf'}
+Best Score - SVC: 0.47188832654502555
+              precision    recall  f1-score   support
+
+           0       0.34      0.24      0.28     23712
+           1       0.41      0.31      0.36     20352
+           2       0.35      0.25      0.29     30480
+           3       0.40      0.64      0.49     34992
+
+    accuracy                           0.38    109536
+   macro avg       0.38      0.36      0.36    109536
+weighted avg       0.38      0.38      0.37    109536
+
+[[ 5701  3194  3340 11477]
+ [ 3165  6381  4053  6753]
+ [ 3318  4000  7525 15637]
+ [ 4367  1908  6350 22367]]
+--------------------------------------------------------
+
+Full feature size: (2282, 169)
+...RandomForestClassifier evaluation starting...
+> Model: RandomForestClassifier:
+>
+{'criterion': 'gini', 'max_depth': 7, 'max_features': 'auto', 'n_estimators': 500}
+Best Score - Random Forest: 0.4806258526467725
+              precision    recall  f1-score   support
+
+           0       0.42      0.38      0.40     44460
+           1       0.49      0.51      0.50     38160
+           2       0.42      0.27      0.33     57150
+           3       0.50      0.69      0.58     65610
+
+    accuracy                           0.47    205380
+   macro avg       0.46      0.46      0.45    205380
+weighted avg       0.46      0.47      0.46    205380
+
+[[16679  7390  6181 14210]
+ [ 6534 19350  7983  4293]
+ [ 6519  9034 15716 25881]
+ [ 9921  3403  7214 45072]]
+--------------------------------------------------------
+
+Full feature size: (2282, 169)
+...XGBClassifier evaluation starting...
+> Model: XGBClassifier:
+>
+{'colsample_bytree': 1.0, 'gamma': 1, 'max_depth': 4, 'min_child_weight': 5, 'subsample': 1.0}
+Best Score - Random Forest: 0.483266903105804
+              precision    recall  f1-score   support
+
+           0       0.40      0.37      0.39    200070
+           1       0.50      0.50      0.50    171720
+           2       0.42      0.40      0.41    257175
+           3       0.52      0.57      0.54    295245
+
+    accuracy                           0.47    924210
+   macro avg       0.46      0.46      0.46    924210
+weighted avg       0.46      0.47      0.46    924210
+
+[[ 74383  32011  36583  57093]
+ [ 32099  85771  39231  14619]
+ [ 31149  40632 103295  82099]
+ [ 46091  13419  67706 168029]]
+--------------------------------------------------------

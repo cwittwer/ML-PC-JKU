@@ -1,0 +1,156 @@
+USING StandardScaler for data
+NOT USING VarianceThreshold 
+
+Full feature size: (2282, 169)
+...DummyClassifier evaluation starting...
+> Model: DummyClassifier: Stratified Group kFolds=31.9% (Min:31.4%,Max:32.3%)
+>
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       494
+           1       0.00      0.00      0.00       424
+           2       0.00      0.00      0.00       635
+           3       0.32      1.00      0.48       729
+
+    accuracy                           0.32      2282
+   macro avg       0.08      0.25      0.12      2282
+weighted avg       0.10      0.32      0.15      2282
+
+[[  0   0   0 494]
+ [  0   0   0 424]
+ [  0   0   0 635]
+ [  0   0   0 729]]
+
+...LogisticRegression evaluation starting...
+> Model: LogisticRegression: Stratified Group kFolds=45.0% (Min:40.7%,Max:49.7%)
+>
+              precision    recall  f1-score   support
+
+           0       0.40      0.36      0.38       494
+           1       0.50      0.51      0.51       424
+           2       0.40      0.38      0.39       635
+           3       0.49      0.54      0.51       729
+
+    accuracy                           0.45      2282
+   macro avg       0.45      0.45      0.45      2282
+weighted avg       0.45      0.45      0.45      2282
+
+[[178  83  75 158]
+ [ 63 218 105  38]
+ [ 81  94 239 221]
+ [121  40 175 393]]
+--------------------------------------------------------
+...KNeighborsClassifier evaluation starting...
+> Model: KNeighborsClassifier: Stratified Group kFolds=45.7% (Min:38.9%,Max:49.0%)
+>
+              precision    recall  f1-score   support
+
+           0       0.35      0.44      0.39       494
+           1       0.46      0.46      0.46       424
+           2       0.44      0.42      0.43       635
+           3       0.57      0.49      0.53       729
+
+    accuracy                           0.46      2282
+   macro avg       0.46      0.45      0.45      2282
+weighted avg       0.47      0.46      0.46      2282
+
+[[219  83  83 109]
+ [118 194  93  19]
+ [118 109 269 139]
+ [166  32 171 360]]
+--------------------------------------------------------
+...DecisionTreeClassifier evaluation starting...
+> Model: DecisionTreeClassifier: Stratified Group kFolds=36.8% (Min:33.0%,Max:41.4%)
+>
+              precision    recall  f1-score   support
+
+           0       0.30      0.32      0.31       494
+           1       0.37      0.37      0.37       424
+           2       0.34      0.32      0.33       635
+           3       0.45      0.44      0.44       729
+
+    accuracy                           0.37      2282
+   macro avg       0.36      0.36      0.36      2282
+weighted avg       0.37      0.37      0.37      2282
+
+[[157  98  95 144]
+ [100 158 110  56]
+ [116 114 205 200]
+ [153  57 198 321]]
+--------------------------------------------------------
+...SVC evaluation starting...
+> Model: SVC: Stratified Group kFolds=46.5% (Min:39.3%,Max:49.7%)
+>
+              precision    recall  f1-score   support
+
+           0       0.42      0.39      0.40       494
+           1       0.50      0.49      0.50       424
+           2       0.39      0.36      0.38       635
+           3       0.53      0.59      0.56       729
+
+    accuracy                           0.47      2282
+   macro avg       0.46      0.46      0.46      2282
+weighted avg       0.46      0.47      0.46      2282
+
+[[192  80  87 135]
+ [ 77 209 113  25]
+ [ 80  99 229 227]
+ [109  31 157 432]]
+--------------------------------------------------------
+...GaussianNB evaluation starting...
+> Model: GaussianNB: Stratified Group kFolds=44.8% (Min:38.2%,Max:49.9%)
+>
+              precision    recall  f1-score   support
+
+           0       0.38      0.36      0.37       494
+           1       0.44      0.57      0.50       424
+           2       0.41      0.24      0.30       635
+           3       0.51      0.62      0.56       729
+
+    accuracy                           0.45      2282
+   macro avg       0.43      0.45      0.43      2282
+weighted avg       0.44      0.45      0.43      2282
+
+[[178 126  56 134]
+ [ 86 243  59  36]
+ [ 87 129 151 268]
+ [123  56 100 450]]
+--------------------------------------------------------
+...RandomForestClassifier evaluation starting...
+> Model: RandomForestClassifier: Stratified Group kFolds=47.4% (Min:38.2%,Max:51.6%)
+>
+              precision    recall  f1-score   support
+
+           0       0.44      0.40      0.42       494
+           1       0.49      0.49      0.49       424
+           2       0.42      0.37      0.39       635
+           3       0.52      0.60      0.56       729
+
+    accuracy                           0.47      2282
+   macro avg       0.47      0.47      0.47      2282
+weighted avg       0.47      0.47      0.47      2282
+
+[[199  81  76 138]
+ [ 75 208 101  40]
+ [ 72 103 237 223]
+ [105  34 152 438]]
+--------------------------------------------------------
+...XGBClassifier evaluation starting...
+> Model: XGBClassifier: Stratified Group kFolds=46.4% (Min:38.2%,Max:50.5%)
+>
+              precision    recall  f1-score   support
+
+           0       0.41      0.35      0.38       494
+           1       0.50      0.50      0.50       424
+           2       0.42      0.39      0.40       635
+           3       0.51      0.58      0.54       729
+
+    accuracy                           0.46      2282
+   macro avg       0.46      0.46      0.46      2282
+weighted avg       0.46      0.46      0.46      2282
+
+[[175  76  87 156]
+ [ 78 214  95  37]
+ [ 71 103 247 214]
+ [107  37 162 423]]
+--------------------------------------------------------

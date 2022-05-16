@@ -1,0 +1,46 @@
+Full feature size: (2282, 169)
+-----------------WITHOUT VARIANCE THRESHOLD---------------------
+-----------------WITHOUT VARIANCE THRESHOLD---------------------
+(1496, 169)
+(786, 169)
+---------KNN Default Setup--------
+Training set score: 0.5648395721925134
+Test set score: 0.31170483460559795
+---------Naive Bayes Default Setup--------
+Training set score: 0.42045454545454547
+Test set score: 0.32188295165394404
+---------KNN Default + Various Scalers--------
+Training set score: 0.7118983957219251
+Test set score: 0.4122137404580153
+{'scaler': MaxAbsScaler()}
+Pipeline(steps=[('scaler', MaxAbsScaler()),
+                ('classifier', KNeighborsClassifier())])
+---------Naive Bayes Default + Various Scalers--------
+Training set score: 0.5347593582887701
+Test set score: 0.33969465648854963
+{'scaler': StandardScaler()}
+Pipeline(steps=[('scaler', StandardScaler()), ('classifier', GaussianNB())])
+
+-----------------WITH VARIANCE THRESHOLD---------------------
+-----------------WITH VARIANCE THRESHOLD---------------------
+Old feature size: (2282, 169)
+New VT feature size: (2282, 92)
+(1501, 92)
+(781, 92)
+---------KNN Default Setup--------
+Training set score: 0.5489673550966022
+Test set score: 0.3060179257362356
+---------Naive Bayes Default Setup--------
+Training set score: 0.4050632911392405
+Test set score: 0.33674775928297057
+---------KNN Default + Various Scalers--------
+Training set score: 0.7121918720852765
+Test set score: 0.39308578745198464
+{'scaler': StandardScaler()}
+Pipeline(steps=[('scaler', StandardScaler()),
+                ('classifier', KNeighborsClassifier())])
+---------Naive Bayes Default + Various Scalers--------
+Training set score: 0.4836775483011326
+Test set score: 0.3854033290653009
+{'scaler': StandardScaler()}
+Pipeline(steps=[('scaler', StandardScaler()), ('classifier', GaussianNB())])

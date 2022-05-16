@@ -1,0 +1,28 @@
+> Model: XGBClassifier + gems_wonder_binary Accuracy:59.3% (Min:55.3%,Max:63.6%)
+>
+> Model: XGBClassifier + gems_transcendence_binary Accuracy:69.3% (Min:66.2%,Max:72.3%)
+>
+> Model: XGBClassifier + gems_tenderness_binary Accuracy:79.1% (Min:76.5%,Max:82.2%)
+>
+> Model: XGBClassifier + gems_nostalgia_binary Accuracy:75.9% (Min:71.5%,Max:79.4%)
+>
+> Model: XGBClassifier + gems_peacefulness_binary Accuracy:80.5% (Min:75.5%,Max:87.1%)
+>
+> Model: XGBClassifier + gems_power_binary Accuracy:87.0% (Min:86.3%,Max:88.3%)
+>
+> Model: XGBClassifier + gems_joyful_activation_binary Accuracy:88.5% (Min:85.8%,Max:91.8%)
+>
+> Model: XGBClassifier + gems_tension_binary Accuracy:84.7% (Min:80.9%,Max:89.0%)
+>
+> Model: XGBClassifier + gems_sadness_binary Accuracy:86.5% (Min:84.9%,Max:88.9%)
+>
+> Model: XGBClassifier + gemmes_movement_binary Accuracy:79.8% (Min:78.4%,Max:81.7%)
+>
+> Model: XGBClassifier + gemmes_force_binary Accuracy:89.1% (Min:86.2%,Max:90.9%)
+>
+> Model: XGBClassifier + gemmes_interior_binary Accuracy:74.8% (Min:69.1%,Max:80.7%)
+>
+> Model: XGBClassifier + gemmes_wandering_binary Accuracy:72.6% (Min:67.8%,Max:75.6%)
+>
+> Model: XGBClassifier + gemmes_flow_binary Accuracy:81.3% (Min:77.8%,Max:85.0%)
+>

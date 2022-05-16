@@ -1,0 +1,13 @@
+name: music
+channels:
+  - defaults
+dependencies:
+  - numpy
+  - pandas
+  - scikit-learn
+  - scipy
+  - matplotlib
+  - python=3.9
+  - ipympl
+  - pip
+    - xgboost

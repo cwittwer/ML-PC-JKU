@@ -1,0 +1,1 @@
+create groupings based off of pianist_id + segment_id. This prevents information leakage between the train and test data by preventing the testing data of having any segments from the same pianist that are also in the test set
