@@ -19,6 +19,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.neural_network import MLPClassifier
 
 import plot_cv_indices as vis
 
@@ -125,7 +126,7 @@ class Music_Experiment:
                 'criterion' :['gini', 'entropy']}
         """
 
-        
+        """
         model=XGBClassifier()
         params={
                 'min_child_weight': [1, 5, 10],
@@ -134,11 +135,23 @@ class Music_Experiment:
                 'colsample_bytree': [0.6, 0.8, 1.0],
                 'max_depth': [3, 4, 5]
                 }
+        """
+        model=MLPClassifier()
+        params = {
+                'max_iter': [1000,1500,2000],
+                'hidden_layer_sizes':[10,12,15], 
+                'activation': ['tanh', 'relu'],
+                'solver': ['lbfgs','sgd', 'adam'],
+                'alpha': [0.0001, 0.05],
+                'learning_rate': ['constant','adaptive'],
+                }
+
 
         return model, params
     
     def get_best_models(self):
         models = list()
+        models.append(MLPClassifier())
         models.append(KNeighborsClassifier(leaf_size=1, metric='minkowski',n_neighbors=5,p=1,weights='uniform'))
         models.append(SVC(C=1,gamma=0.001,kernel='rbf'))
         models.append(RandomForestClassifier(criterion='gini',max_depth=7,max_features='auto',n_estimators=500))
@@ -611,9 +624,9 @@ Exp.test_prepro(prepro_data=True)
 #Exp.visualize_folds()
 #Exp.test_models()
 #Exp.test_models_main()
-#Exp.param_tuning()
+Exp.param_tuning()
 #Exp.of_analysis()
 #Exp.test_optimal_models()
-Exp.train_gem_gemmes()
+#Exp.train_gem_gemmes()
 
 
